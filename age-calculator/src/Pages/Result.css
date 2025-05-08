@@ -1,0 +1,140 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+  }
+  
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    
+  }
+  
+  .result-section {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result-section p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  button {
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+    max-width: 200px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+
+  .button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3);
+  }
+
+  footer {
+    margin-top: auto; 
+  }
+
+  /* Small Mobile */
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  .result-section {
+    padding: 15px;
+  }
+
+  .result-section p {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
+
+/* Medium Mobile  */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  .result-section {
+    padding: 18px;
+  }
+
+  .result-section p {
+    font-size: 17px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}
+
+/* Tablets and small laptops */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .result-section {
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
+
+/* desktops */
+@media screen and (min-width: 1200px) {
+  .result-section {
+    max-width: 600px;
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .result-section p {
+    font-size: 20px;
+  }
+}

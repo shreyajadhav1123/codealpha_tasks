@@ -1,0 +1,186 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 15px;
+  background-color: #004d26;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: sticky;
+}
+
+.logo-container .logo {
+  height: 50px;
+  width: auto;
+}
+
+.app-name h1{
+  color: #ffffff;  
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.account-section {
+  display: flex; 
+  align-items: center;
+}
+
+.account-icon {
+  color: white; 
+  background-color: transparent; 
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-icon:hover .profile-thumbnail {
+  color: #64c3b6; 
+  background-color: transparent;
+  border: 2px solid #64c3b6; 
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 8px;
+  top: 90px;
+  background-color: rgb(221, 214, 214);
+  color: black;
+  padding: 10px;
+  border: 1px solid #ccc;
+  z-index: 100;
+  min-width: 150px;
+  min-height: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  overflow-y: auto;
+
+}
+
+.dropdown-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.profile-thumbnail,
+.profile-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-icon {
+  font-size: 40px;
+  color: #23235c;
+  margin-bottom: 10px;
+}
+
+.username {
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+
+.dropdown-menu p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.dropdown-menu button {
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 8px 0;
+  font-weight: bold;
+  width: 100%;
+  color: #023e20;
+  background-color: #4CAF50;
+  transition: background-color 0.3s ease;
+}
+
+.remove-photo-btn {
+  background-color: #9e9e9e;
+  color: white;
+}
+
+.remove-photo-btn:hover {
+  background-color: #757575;
+} 
+
+
+.dropdown-menu button:last-child {
+  margin-top: 5px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #333;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.close-icon:hover {
+  color: #f44336;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 767px) {
+  .app-name h1 {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    right: 10px;
+    top: 70px;
+    min-width: 200px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .account-section {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+}
+
+/* Tablet Devices */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .app-name h1 {
+    font-size: 26px;
+  }
+
+  .dropdown-menu {
+    top: 80px;
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1025px) {
+  .app-name h1 {
+    font-size: 30px;
+  }
+
+  .dropdown-menu {
+    top: 90px;
+  }
+}

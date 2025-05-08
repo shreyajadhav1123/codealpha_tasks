@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.content-box {
+  width: 90%;
+  max-width: 500px;
+  background-color: #f9f9f9; 
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+}
+
+.sub-heading {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+}
+
+.calculate-btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #004d26;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  width: auto;
+  max-width: 200px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calculate-btn:hover {
+  background-color: #005304;
+  transform: scale(1.05);
+}
+
+.calculate-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3);
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  .sub-heading {
+    font-size: 13px;
+  }
+
+  .react-datepicker__input-container input {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .calculate-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .content-box {
+    padding: 20px;
+  }
+
+  .form-group {
+    max-width: 90%;
+  }
+
+  .calculate-btn {
+    font-size: 15px;
+  }
+}
+
+/* desktops */
+@media screen and (min-width: 1025px) {
+  .main-content {
+    margin-top: 100px;
+  }
+
+  .content-box {
+    padding: 30px;
+  }
+}
+

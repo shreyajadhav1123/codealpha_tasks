@@ -1,0 +1,33 @@
+.app {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  color: #003366;
+}
+
+.date-row {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+label {
+  width: 150px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #5a8d2f;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
