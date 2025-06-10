@@ -1,0 +1,70 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; 
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.favorites-page {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  cursor: p
+}
+
+.favorites-song h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.favorites-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.favorite-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.favorite-item .info {
+  flex: 1;
+  overflow: hidden;
+}
+
+.favorite-item .info h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.favorite-item .info p {
+  margin: 3px 0 0 0;
+  font-size: 13px;
+  color: #aaa;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
